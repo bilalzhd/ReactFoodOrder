@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 
 import Header from './components/Layout/Header/Header';
 import Meals from './components/Meals/Meals';
@@ -9,10 +9,10 @@ import CartContextProvider from './store/CartContextProvider';
 function App() {
   const [ cartIsShown, setCartIsShown ] = useState(false);
 
-  const cartShownHandler = () => {
+  const cartShownHandler = ()=> {
     setCartIsShown(true);
   }
-  
+
   const hideCartHandler = () => {
     setCartIsShown(false);
   }
