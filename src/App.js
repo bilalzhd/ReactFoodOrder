@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-import Header from './components/Layout/Header/Header';
+import Header from './components/Layout/Header';
 import Meals from './components/Meals/Meals';
 import CartModal from './components/Cart/Cart';
 import './App.css';

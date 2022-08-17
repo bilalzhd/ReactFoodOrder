@@ -12,7 +12,7 @@ const Cart = props => {
 
     }
     const addHandler = (item) =>{
-        
+        cartCtx.addItem({...item, amount:1})
     }
 
     const cartItems = <ul>{cartCtx.items.map(item=>
