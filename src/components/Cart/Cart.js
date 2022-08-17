@@ -9,7 +9,7 @@ const Cart = props => {
     const hasItems = cartCtx.items.length > 0;
     const totalAmount = cartCtx.totalAmount.toFixed(2);
     const removeHandler = (id) => {
-
+        cartCtx.removeItem(id)
     }
     const addHandler = (item) =>{
         cartCtx.addItem({...item, amount:1})
