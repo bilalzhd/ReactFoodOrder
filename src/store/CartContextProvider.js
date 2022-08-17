@@ -29,6 +29,7 @@ const cartReducer = (state, action) => {
             items: updatedItems,
             totalAmount: updatedAmount
         }
+        
         if(action.type === "REMOVE") {
             const exisitingItemIndex = state.items.findIndex(item => item.id === action.item.id)
             const existingItem = state.item[exisitingItemIndex]
